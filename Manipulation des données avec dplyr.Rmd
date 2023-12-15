@@ -13,10 +13,12 @@ knitr::opts_chunk$set(echo = TRUE)
 # Description du projet
 Dans cet exercice nous apprenons comment nous pouvons importer les données dans `R` et les manipuler avec la librairie `dplyr`.
 
+
 ```{r, echo=FALSE}
 library(tidyverse)
 
 ```
+
 
 ## Importation des données csv
 - Importer les indices des prix du fichier : Prix.csv, en utilisant `read.csv()`
@@ -69,7 +71,10 @@ Prix_Dict<-Prix_df|> inner_join(
 str(Prix_Dict)
 ```
 
+<<<<<<< HEAD
 - La fusion peut se faire aussi par la fonction `left_join()` dans ce cas on ramène les informations du dictionnaire des données dans la base données des prix.
+=======
+>>>>>>> 5d42fcd6d94425175a9f2922c10d7eb226f1eafe
 ```{r}
 Prix_Dict<-Prix_df|> left_join(
                       Dictionnaire|>rename(CODE=SERIE), 
@@ -77,8 +82,11 @@ Prix_Dict<-Prix_df|> left_join(
            relocate(PAYS,CODE,COMMODITE,Date,Prix)
 str(Prix_Dict)
 ```
+<<<<<<< HEAD
 
 - La fusion peut se faire aussi par la fonction `right_join()` dans ce cas on ramène les informations des données des prix dans la base données du dictionnaire.
+=======
+>>>>>>> 5d42fcd6d94425175a9f2922c10d7eb226f1eafe
 ```{r}
 Prix_Dict<-Dictionnaire|>
           rename(CODE=SERIE)|> right_join(
@@ -104,8 +112,11 @@ Prix_Dict<-Prix_Dict|>mutate(Mois=month(Date), Annee=year(Date))
 str(Prix_Dict)
 ```
 
+<<<<<<< HEAD
 ## Référence
 - Wickham H, François R, Henry L, Müller K (2022). _dplyr: A Grammar of Data Manipulation_. R package
   version 1.0.9, <https://CRAN.R-project.org/package=dplyr>.
+=======
+>>>>>>> 5d42fcd6d94425175a9f2922c10d7eb226f1eafe
 
 
