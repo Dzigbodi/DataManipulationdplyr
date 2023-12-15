@@ -9,7 +9,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
 # Description du projet
 Dans cet exercice nous apprenons comment nous pouvons importer les données dans `R` et les manipuler avec la librairie `dplyr`.
 
@@ -18,7 +17,6 @@ Dans cet exercice nous apprenons comment nous pouvons importer les données dans
 library(tidyverse)
 
 ```
-
 
 ## Importation des données csv
 - Importer les indices des prix du fichier : Prix.csv, en utilisant `read.csv()`
