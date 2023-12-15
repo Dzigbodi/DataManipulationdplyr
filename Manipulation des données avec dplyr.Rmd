@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-#Description du projet
+# Description du projet
 Dans cet exercice nous apprenons comment nous pouvons importer les données dans `R` et les manipuler avec la librairie `dplyr`.
 
 ```{r, echo=FALSE}
