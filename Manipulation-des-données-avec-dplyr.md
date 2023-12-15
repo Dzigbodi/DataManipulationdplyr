@@ -123,11 +123,9 @@ str(Prix_Dict)
     ##  $ Date     : chr  "2/1/2000" "3/1/2000" "4/1/2000" "5/1/2000" ...
     ##  $ Prix     : num  0 0 0 0 0 0 0 0 0 0 ...
 
-\<\<\<\<\<\<\< HEAD
-
-- # La fusion peut se faire aussi par la fonction `right_join()` dans ce cas on ramène les informations des données des prix dans la base données du dictionnaire.
-
-  > > > > > > > 5d42fcd6d94425175a9f2922c10d7eb226f1eafe
+- La fusion peut se faire aussi par la fonction `right_join()` dans ce
+  cas on ramène les informations des données des prix dans la base
+  données du dictionnaire.
 
 ``` r
 Prix_Dict<-Dictionnaire|>
@@ -179,7 +177,8 @@ str(Prix_Dict)
     ##  $ Mois     : num  2 3 4 5 6 7 8 9 10 11 ...
     ##  $ Annee    : num  2000 2000 2000 2000 2000 2000 2000 2000 2000 2000 ...
 
-\<\<\<\<\<\<\< HEAD \## Référence - Wickham H, François R, Henry L,
-Müller K (2022). *dplyr: A Grammar of Data Manipulation*. R package
-version 1.0.9, <https://CRAN.R-project.org/package=dplyr>. =======
-\>\>\>\>\>\>\> 5d42fcd6d94425175a9f2922c10d7eb226f1eafe
+## Référence
+
+- Wickham H, François R, Henry L, Müller K (2022). *dplyr: A Grammar of
+  Data Manipulation*. R package version 1.0.9,
+  <https://CRAN.R-project.org/package=dplyr>.
